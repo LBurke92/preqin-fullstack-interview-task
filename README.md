@@ -21,26 +21,24 @@ When I click on an Asset Class
 I want to see relevant commitments.
 ```
 
-Sample data is provided in `data.csv`. 
+Sample data is provided in `data.csv`.
 
-How you visualise the data is up to you, but we include some wireframes just in case you want some guidance: 
+How you visualise the data is up to you, but we include some wireframes just in case you want some guidance:
 ![Investors Listing](./wireframe-investors.png) ![Commitments Breakdown](./wireframe-investor-commitments.png)
 
 Note: Assume a sole currency of GBP, and ignore any authentication needs.
-
 
 ## Technical Requirements
 
 The solution is completely open but some technical specifications need to be met:
 
-1. You must use a real database and model the entities accordingly. We recommend `SQLite` so that you can include the database with your code.
+1. Data Layer: You must use a relational database and model the entities accordingly. We recommend `SQLite` so that you can include the database as a file with your code.
 
-2. Data must be aggregated/calculated on an API service written in Python or C#
+2. Backend Service: Data must be served to the consumers via an API service.
 
-3. Your API must be consumed by a web application using React/Typescript
+3. Webapp: A web application should consume and visualize the data from your api.
 
-Note, these are the technologies we use day to day.
-
+Note: You are free to use any language and frameworks. Out tech stack consists of: React micro frontends (newer ones with typescript, older ones without), Python micro services (some using REST/FastAPI others using GQL/Strawberry), and .NET (C#) for our legacy services. Bonus if you use any of these.
 
 ## Submitting your solution
 
