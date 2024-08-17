@@ -1,0 +1,4 @@
+[project]
+name = "preqin api"
+version = "0.1"
+dependencies = ["pandas", "sqlalchemy", "fastapi"]
