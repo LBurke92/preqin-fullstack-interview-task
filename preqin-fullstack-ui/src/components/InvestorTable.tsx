@@ -3,41 +3,51 @@ import {useState, useEffect} from "react"
 const {VITE_PREQIN_API_SERVER} = import.meta.env
 
 interface Investor {
-  message: string
+  id: number
+  investorName: string
+  investoryType: string
+  investorCountry: string
+  investorDateAdded: string
+  investorLastUpdated: string
+  commitmentAssetClass: string
+  commitmentAmount: number
+  commitmentCurrency: string
 }
 
-// interface Investors {
-//   id: number
-//   investor_name: string
-//   investory_type: string
-//   investor_country: string
-//   investor_date_added: Date
-//   investor_last_updated: Date
-//   commitment_asset_class: string
-//   commitment_amount: number
-//   commitment_currency: string
-// }
-
 export function InvestorTable() {
-  const [investors, setInvestors] = useState<Investor>({} as Investor)
+  const [investors, setInvestors] = useState<Investor[]>([])
   useEffect(() => {
-    fetch(VITE_PREQIN_API_SERVER || "")
-      .then(res => {
-        return res.json()
-      })
-      .then(data => {
-        setInvestors(data)
-      })
+    const fetchData = async () => {
+      const investors = await fetch(VITE_PREQIN_API_SERVER || "")
+      const json = await investors.json()
+      setInvestors(json)
+    }
+
+    try {
+      fetchData()
+    } catch (error) {
+      console.log(error)
+    }
   }, [])
 
   return (
     <table>
       <tbody>
-        <tr>
-          <td>Hi</td>
-          <td>Bye</td>
-          <td>{investors.message}</td>
-        </tr>
+        {investors.map(investor => {
+          return (
+            <tr key={investor.id}>
+              <td>{investor.id}</td>
+              <td>{investor.investorName}</td>
+              <td>{investor.investoryType}</td>
+              <td>{investor.investorCountry}</td>
+              <td>{investor.investorDateAdded}</td>
+              <td>{investor.investorLastUpdated}</td>
+              <td>{investor.commitmentAssetClass}</td>
+              <td>{investor.commitmentAmount}</td>
+              <td>{investor.commitmentCurrency}</td>
+            </tr>
+          )
+        })}
       </tbody>
     </table>
   )
