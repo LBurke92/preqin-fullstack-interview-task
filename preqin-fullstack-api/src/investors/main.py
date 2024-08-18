@@ -4,6 +4,7 @@ from sqlalchemy.orm import Session
 
 from . import crud, models, schemas
 from .database import SessionLocal, engine
+from .helpers import investor_filter_and_sort
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -35,6 +36,36 @@ app.add_middleware(
 @app.get("/", response_model=list[schemas.Investor])
 def read_investors(db: Session = Depends(get_db), skip: int = 0, limit: int = 300):
     results = crud.get_all_investors(db, skip, limit)
-    # for res in results:
-    #     print(res)
+    investor_filter_and_sort(results)
+    return results
+
+
+@app.get("/investor/{investor_name}", response_model=list[schemas.Investor])
+def read_investors(
+    db: Session = Depends(get_db),
+    investor_name: str = "",
+):
+    results = crud.get_investor_by_investor_name(db, investor_name)
+    return results
+
+
+@app.get(
+    "/commitment-asset-class/{commitment_asset_class}",
+    response_model=list[schemas.Investor],
+)
+def read_investors(
+    db: Session = Depends(get_db),
+    commitment_asset_class: str = "",
+):
+    results = crud.get_investor_by_commitment_asset_class(db, commitment_asset_class)
+    return results
+
+
+@app.get(
+    "/commitment-asset-class/{commitment_asset_class}",
+    response_model=list[schemas.Investor],
+)
+def read_investors(db: Session = Depends(get_db), skip: int = 0, limit: int = 300):
+    results = crud.get_all_investors(db, skip, limit)
+    investor_filter_and_sort(results)
     return results

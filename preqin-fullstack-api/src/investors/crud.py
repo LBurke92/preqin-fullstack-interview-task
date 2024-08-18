@@ -6,9 +6,15 @@ from .database import SessionLocal, engine
 from . import models, schemas, database
 
 
-def get_investor_by_investor_name(db: Session, investor_name: int):
+def get_investor_by_investor_name(db: Session, investor_name: str):
     return db.query(models.Investor).filter(
         models.Investor.investorName == investor_name
+    )
+
+
+def get_investor_by_commitment_asset_class(db: Session, commitment_asset_class: str):
+    return db.query(models.Investor).filter(
+        models.Investor.commitmentAssetClass == commitment_asset_class
     )
 
 
@@ -47,8 +53,4 @@ def create_investors_from_csv(file_name):
 
 if __name__ == "__main__":
     db = SessionLocal()
-    results = get_all_investors(db)
-
-    for res in results:
-        print(res)
-    # create_investors_from_csv("./investors/data.csv")
+    create_investors_from_csv("./investors/data.csv")

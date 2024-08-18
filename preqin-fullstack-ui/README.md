@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+# Preqin UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This contains the UI source code for the preqin fullstack interview task.
+This is built using React + Typescript + Vite using `npm create vite@latest`
 
-Currently, two official plugins are available:
+# Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You will need to install `Node.js` before anything, instructions for which can be found [here](https://nodejs.org/en/download/package-manager/).
 
-## Expanding the ESLint configuration
+At the time of building this I used `Node v20.12.1` so I would reccomend at least this version. Using `nvm` is a great tool to manage multiple version of Node.js on your machine and is highly reccomended as well.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+You will then need to install all dependencies in your preferred manner using `yarn` or `npm`
 
-- Configure the top-level `parserOptions` property like this:
+e.g `npm install`
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Create an appropriate .env file which can be copied from .env.example for local testing.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+# Starting the application
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+You should be able to run the application using
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+`npm run dev`
+
+And then be able to open it at http://localhost:5173/

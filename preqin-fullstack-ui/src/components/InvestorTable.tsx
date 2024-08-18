@@ -1,6 +1,6 @@
-import {useState, useEffect} from "react"
-
-const {VITE_PREQIN_API_SERVER} = import.meta.env
+import {useLoaderData, useNavigate} from "react-router-dom"
+import {Table} from "@radix-ui/themes"
+import "@radix-ui/themes/styles.css"
 
 interface Investor {
   id: number
@@ -15,40 +15,51 @@ interface Investor {
 }
 
 export function InvestorTable() {
-  const [investors, setInvestors] = useState<Investor[]>([])
-  useEffect(() => {
-    const fetchData = async () => {
-      const investors = await fetch(VITE_PREQIN_API_SERVER || "")
-      const json = await investors.json()
-      setInvestors(json)
-    }
+  const navigate = useNavigate()
+  const investors = useLoaderData() as Investor[]
 
-    try {
-      fetchData()
-    } catch (error) {
-      console.log(error)
-    }
-  }, [])
+  const handleSelectedInvestorName = async (investor: Investor) => {
+    navigate(`investor/${investor.investorName}`)
+  }
+
+  const handleSelectedCommitmentAssetClass = async (investor: Investor) => {
+    navigate(`commitment-asset-class/${investor.commitmentAssetClass}`)
+  }
 
   return (
-    <table>
-      <tbody>
+    <Table.Root layout="auto" size="1">
+      <Table.Header>
+        <Table.Row>
+          <Table.ColumnHeaderCell align="left">ID</Table.ColumnHeaderCell>
+          <Table.ColumnHeaderCell align="left">Investor Name</Table.ColumnHeaderCell>
+          <Table.ColumnHeaderCell align="left">Investory Type</Table.ColumnHeaderCell>
+          <Table.ColumnHeaderCell align="left">Investor Country</Table.ColumnHeaderCell>
+          <Table.ColumnHeaderCell align="left">Investor Date Added</Table.ColumnHeaderCell>
+          <Table.ColumnHeaderCell align="left">Investor Last Updated</Table.ColumnHeaderCell>
+          <Table.ColumnHeaderCell align="left">Commitment Asset Class</Table.ColumnHeaderCell>
+          <Table.ColumnHeaderCell align="left">Commitmment Amount</Table.ColumnHeaderCell>
+          <Table.ColumnHeaderCell align="left">Commitmment Currency</Table.ColumnHeaderCell>
+        </Table.Row>
+      </Table.Header>
+      <Table.Body>
         {investors.map(investor => {
           return (
-            <tr key={investor.id}>
-              <td>{investor.id}</td>
-              <td>{investor.investorName}</td>
-              <td>{investor.investoryType}</td>
-              <td>{investor.investorCountry}</td>
-              <td>{investor.investorDateAdded}</td>
-              <td>{investor.investorLastUpdated}</td>
-              <td>{investor.commitmentAssetClass}</td>
-              <td>{investor.commitmentAmount}</td>
-              <td>{investor.commitmentCurrency}</td>
-            </tr>
+            <Table.Row key={investor.id}>
+              <Table.RowHeaderCell>{investor.id}</Table.RowHeaderCell>
+              <Table.Cell onClick={() => handleSelectedInvestorName(investor)}>{investor.investorName}</Table.Cell>
+              <Table.Cell>{investor.investoryType}</Table.Cell>
+              <Table.Cell>{investor.investorCountry}</Table.Cell>
+              <Table.Cell>{investor.investorDateAdded}</Table.Cell>
+              <Table.Cell>{investor.investorLastUpdated}</Table.Cell>
+              <Table.Cell onClick={() => handleSelectedCommitmentAssetClass(investor)}>
+                {investor.commitmentAssetClass}
+              </Table.Cell>
+              <Table.Cell>{investor.commitmentAmount}</Table.Cell>
+              <Table.Cell>{investor.commitmentCurrency}</Table.Cell>
+            </Table.Row>
           )
         })}
-      </tbody>
-    </table>
+      </Table.Body>
+    </Table.Root>
   )
 }
