@@ -1,6 +1,7 @@
 from fastapi import FastAPI, Depends, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
+from fastapi.testclient import TestClient
 
 from . import crud, models, schemas
 from .database import SessionLocal, engine
@@ -36,12 +37,12 @@ app.add_middleware(
 @app.get("/", response_model=list[schemas.Investor])
 def read_investors(db: Session = Depends(get_db), skip: int = 0, limit: int = 300):
     results = crud.get_all_investors(db, skip, limit)
-    investor_filter_and_sort(results)
+    # investor_filter_and_sort(results)
     return results
 
 
 @app.get("/investor/{investor_name}", response_model=list[schemas.Investor])
-def read_investors(
+def read_investor_by_investor_name(
     db: Session = Depends(get_db),
     investor_name: str = "",
 ):
@@ -53,7 +54,7 @@ def read_investors(
     "/commitment-asset-class/{commitment_asset_class}",
     response_model=list[schemas.Investor],
 )
-def read_investors(
+def read_investor_by_commitment_asset_class(
     db: Session = Depends(get_db),
     commitment_asset_class: str = "",
 ):

@@ -1,4 +1,16 @@
 [project]
-name = "preqin api"
+name = "preqin-fullstack-api"
 version = "0.1"
-dependencies = ["pandas", "sqlalchemy", "fastapi"]
+dependencies = ["pandas", "sqlalchemy", "fastapi", "pytest", "httpx"]
+requires-python = ">=3.12"
+authors = [
+  {name = "Lamar Burke", email = "lamarburke@live.co.uk"},
+]
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+description = "An API Service which retrieves investor data"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+
+[project.scripts]

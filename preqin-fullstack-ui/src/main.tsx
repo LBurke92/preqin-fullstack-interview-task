@@ -3,7 +3,9 @@ import * as ReactDOM from "react-dom/client"
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import {Theme} from "@radix-ui/themes"
 
-import Root from "./routes/root"
+import RootPage from "@/routes/rootPage"
+import CommitmentAssetClassPage from "@/routes/commitmentAssetClassPage"
+import InvestorDetailsPage from "@/routes/investorDetailsPage"
 
 import "@radix-ui/themes/styles.css"
 import "./main.css"
@@ -13,7 +15,7 @@ const {VITE_PREQIN_API_SERVER} = import.meta.env
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <RootPage />,
     loader: async ({request}) => {
       return fetch(`${VITE_PREQIN_API_SERVER}`, {signal: request.signal})
     },
@@ -21,7 +23,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/commitment-asset-class/:commitmentAssetClass",
-    element: <Root />,
+    element: <CommitmentAssetClassPage />,
     loader: async ({request, params}) => {
       return fetch(`${VITE_PREQIN_API_SERVER}/commitment-asset-class/${params.commitmentAssetClass}`, {
         signal: request.signal
@@ -31,7 +33,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/investor/:investorName",
-    element: <Root />,
+    element: <InvestorDetailsPage />,
     loader: async ({request, params}) => {
       return fetch(`${VITE_PREQIN_API_SERVER}/investor/${params.investorName}`, {signal: request.signal})
     },

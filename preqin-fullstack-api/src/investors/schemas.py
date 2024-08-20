@@ -20,5 +20,5 @@ class InvestorCreate(InvestorBase):
 class Investor(InvestorBase):
     id: int
 
-    class Config:
+    class ConfigDict:
         from_attributes = True

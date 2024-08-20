@@ -1,29 +1,20 @@
-import {useLoaderData, useNavigate} from "react-router-dom"
 import {Table} from "@radix-ui/themes"
+import {Investor} from "@/types"
 import "@radix-ui/themes/styles.css"
 
-interface Investor {
-  id: number
-  investorName: string
-  investoryType: string
-  investorCountry: string
-  investorDateAdded: string
-  investorLastUpdated: string
-  commitmentAssetClass: string
-  commitmentAmount: number
-  commitmentCurrency: string
+interface Props {
+  investors: Investor[]
+  selectInvestorName?: (investorName: string) => void
+  selectCommitmentAssetClass?: (commitmentAssetClass: string) => void
 }
 
-export function InvestorTable() {
-  const navigate = useNavigate()
-  const investors = useLoaderData() as Investor[]
-
+export default function InvestorTable(props: Props) {
   const handleSelectedInvestorName = async (investor: Investor) => {
-    navigate(`investor/${investor.investorName}`)
+    if (props.selectInvestorName) props.selectInvestorName(investor.investorName)
   }
 
   const handleSelectedCommitmentAssetClass = async (investor: Investor) => {
-    navigate(`commitment-asset-class/${investor.commitmentAssetClass}`)
+    if (props.selectCommitmentAssetClass) props.selectCommitmentAssetClass(investor.commitmentAssetClass)
   }
 
   return (
@@ -42,16 +33,21 @@ export function InvestorTable() {
         </Table.Row>
       </Table.Header>
       <Table.Body>
-        {investors.map(investor => {
+        {props.investors.map(investor => {
           return (
             <Table.Row key={investor.id}>
               <Table.RowHeaderCell>{investor.id}</Table.RowHeaderCell>
-              <Table.Cell onClick={() => handleSelectedInvestorName(investor)}>{investor.investorName}</Table.Cell>
+              <Table.Cell data-testid={investor.investorName} onClick={() => handleSelectedInvestorName(investor)}>
+                {investor.investorName}
+              </Table.Cell>
               <Table.Cell>{investor.investoryType}</Table.Cell>
               <Table.Cell>{investor.investorCountry}</Table.Cell>
               <Table.Cell>{investor.investorDateAdded}</Table.Cell>
               <Table.Cell>{investor.investorLastUpdated}</Table.Cell>
-              <Table.Cell onClick={() => handleSelectedCommitmentAssetClass(investor)}>
+              <Table.Cell
+                data-testid={investor.commitmentAssetClass}
+                onClick={() => handleSelectedCommitmentAssetClass(investor)}
+              >
                 {investor.commitmentAssetClass}
               </Table.Cell>
               <Table.Cell>{investor.commitmentAmount}</Table.Cell>

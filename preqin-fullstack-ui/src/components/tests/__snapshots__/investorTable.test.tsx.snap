@@ -1,0 +1,1314 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`InvestorTable > matches the DOM snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="rt-TableRoot rt-r-size-1 rt-variant-ghost"
+      >
+        <div
+          class="rt-ScrollAreaRoot"
+          dir="ltr"
+          style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;"
+        >
+          <style>
+            [data-radix-scroll-area-viewport]{scrollbar-width:none;-ms-overflow-style:none;-webkit-overflow-scrolling:touch;}[data-radix-scroll-area-viewport]::-webkit-scrollbar{display:none}
+          </style>
+          <div
+            class="rt-ScrollAreaViewport"
+            data-radix-scroll-area-viewport=""
+            style="overflow-x: scroll; overflow-y: scroll;"
+          >
+            <div
+              style="min-width: 100%; display: table;"
+            >
+              <table
+                class="rt-TableRootTable rt-r-tl-auto"
+              >
+                <thead
+                  class="rt-TableHeader"
+                >
+                  <tr
+                    class="rt-TableRow"
+                  >
+                    <th
+                      align="left"
+                      class="rt-TableCell rt-TableColumnHeaderCell"
+                      scope="col"
+                    >
+                      ID
+                    </th>
+                    <th
+                      align="left"
+                      class="rt-TableCell rt-TableColumnHeaderCell"
+                      scope="col"
+                    >
+                      Investor Name
+                    </th>
+                    <th
+                      align="left"
+                      class="rt-TableCell rt-TableColumnHeaderCell"
+                      scope="col"
+                    >
+                      Investory Type
+                    </th>
+                    <th
+                      align="left"
+                      class="rt-TableCell rt-TableColumnHeaderCell"
+                      scope="col"
+                    >
+                      Investor Country
+                    </th>
+                    <th
+                      align="left"
+                      class="rt-TableCell rt-TableColumnHeaderCell"
+                      scope="col"
+                    >
+                      Investor Date Added
+                    </th>
+                    <th
+                      align="left"
+                      class="rt-TableCell rt-TableColumnHeaderCell"
+                      scope="col"
+                    >
+                      Investor Last Updated
+                    </th>
+                    <th
+                      align="left"
+                      class="rt-TableCell rt-TableColumnHeaderCell"
+                      scope="col"
+                    >
+                      Commitment Asset Class
+                    </th>
+                    <th
+                      align="left"
+                      class="rt-TableCell rt-TableColumnHeaderCell"
+                      scope="col"
+                    >
+                      Commitmment Amount
+                    </th>
+                    <th
+                      align="left"
+                      class="rt-TableCell rt-TableColumnHeaderCell"
+                      scope="col"
+                    >
+                      Commitmment Currency
+                    </th>
+                  </tr>
+                </thead>
+                <tbody
+                  class="rt-TableBody"
+                >
+                  <tr
+                    class="rt-TableRow"
+                  >
+                    <th
+                      class="rt-TableCell rt-TableRowHeaderCell"
+                      scope="row"
+                    >
+                      0
+                    </th>
+                    <td
+                      class="rt-TableCell"
+                      data-testid="Ioo Gryffindor fund"
+                    >
+                      Ioo Gryffindor fund
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      fund manager
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      Singapore
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      2000-07-06
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      2024-02-21
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                      data-testid="Infrastructure"
+                    >
+                      Infrastructure
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      15000000
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      GBP
+                    </td>
+                  </tr>
+                  <tr
+                    class="rt-TableRow"
+                  >
+                    <th
+                      class="rt-TableCell rt-TableRowHeaderCell"
+                      scope="row"
+                    >
+                      1
+                    </th>
+                    <td
+                      class="rt-TableCell"
+                      data-testid="Ibx Skywalker ltd"
+                    >
+                      Ibx Skywalker ltd
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      asset manager
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      United States
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      1997-07-21
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      2024-02-21
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                      data-testid="Infrastructure"
+                    >
+                      Infrastructure
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      31000000
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      GBP
+                    </td>
+                  </tr>
+                  <tr
+                    class="rt-TableRow"
+                  >
+                    <th
+                      class="rt-TableCell rt-TableRowHeaderCell"
+                      scope="row"
+                    >
+                      2
+                    </th>
+                    <td
+                      class="rt-TableCell"
+                      data-testid="Cza Weasley fund"
+                    >
+                      Cza Weasley fund
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      wealth manager
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      United Kingdom
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      2002-05-29
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      2024-02-21
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                      data-testid="Hedge Funds"
+                    >
+                      Hedge Funds
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      58000000
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      GBP
+                    </td>
+                  </tr>
+                  <tr
+                    class="rt-TableRow"
+                  >
+                    <th
+                      class="rt-TableCell rt-TableRowHeaderCell"
+                      scope="row"
+                    >
+                      3
+                    </th>
+                    <td
+                      class="rt-TableCell"
+                      data-testid="Mjd Jedi fund"
+                    >
+                      Mjd Jedi fund
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      bank
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      China
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      2010-06-08
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      2024-02-21
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                      data-testid="Private Equity"
+                    >
+                      Private Equity
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      72000000
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      GBP
+                    </td>
+                  </tr>
+                  <tr
+                    class="rt-TableRow"
+                  >
+                    <th
+                      class="rt-TableCell rt-TableRowHeaderCell"
+                      scope="row"
+                    >
+                      4
+                    </th>
+                    <td
+                      class="rt-TableCell"
+                      data-testid="Mjd Jedi fund"
+                    >
+                      Mjd Jedi fund
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      bank
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      China
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      2010-06-08
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      2024-02-21
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                      data-testid="Natural Resources"
+                    >
+                      Natural Resources
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      1000000
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      GBP
+                    </td>
+                  </tr>
+                  <tr
+                    class="rt-TableRow"
+                  >
+                    <th
+                      class="rt-TableCell rt-TableRowHeaderCell"
+                      scope="row"
+                    >
+                      5
+                    </th>
+                    <td
+                      class="rt-TableCell"
+                      data-testid="Ibx Skywalker ltd"
+                    >
+                      Ibx Skywalker ltd
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      asset manager
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      United States
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      1997-07-21
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      2024-02-21
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                      data-testid="Real Estate"
+                    >
+                      Real Estate
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      17000000
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      GBP
+                    </td>
+                  </tr>
+                  <tr
+                    class="rt-TableRow"
+                  >
+                    <th
+                      class="rt-TableCell rt-TableRowHeaderCell"
+                      scope="row"
+                    >
+                      6
+                    </th>
+                    <td
+                      class="rt-TableCell"
+                      data-testid="Ibx Skywalker ltd"
+                    >
+                      Ibx Skywalker ltd
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      asset manager
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      United States
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      1997-07-21
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      2024-02-21
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                      data-testid="Real Estate"
+                    >
+                      Real Estate
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      83000000
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      GBP
+                    </td>
+                  </tr>
+                  <tr
+                    class="rt-TableRow"
+                  >
+                    <th
+                      class="rt-TableCell rt-TableRowHeaderCell"
+                      scope="row"
+                    >
+                      7
+                    </th>
+                    <td
+                      class="rt-TableCell"
+                      data-testid="Mjd Jedi fund"
+                    >
+                      Mjd Jedi fund
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      bank
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      China
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      2010-06-08
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      2024-02-21
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                      data-testid="Hedge Funds"
+                    >
+                      Hedge Funds
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      28000000
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      GBP
+                    </td>
+                  </tr>
+                  <tr
+                    class="rt-TableRow"
+                  >
+                    <th
+                      class="rt-TableCell rt-TableRowHeaderCell"
+                      scope="row"
+                    >
+                      8
+                    </th>
+                    <td
+                      class="rt-TableCell"
+                      data-testid="Ibx Skywalker ltd"
+                    >
+                      Ibx Skywalker ltd
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      asset manager
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      United States
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      1997-07-21
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      2024-02-21
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                      data-testid="Hedge Funds"
+                    >
+                      Hedge Funds
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      85000000
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      GBP
+                    </td>
+                  </tr>
+                  <tr
+                    class="rt-TableRow"
+                  >
+                    <th
+                      class="rt-TableCell rt-TableRowHeaderCell"
+                      scope="row"
+                    >
+                      9
+                    </th>
+                    <td
+                      class="rt-TableCell"
+                      data-testid="Ioo Gryffindor fund"
+                    >
+                      Ioo Gryffindor fund
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      fund manager
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      Singapore
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      2000-07-06
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      2024-02-21
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                      data-testid="Hedge Funds"
+                    >
+                      Hedge Funds
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      31000000
+                    </td>
+                    <td
+                      class="rt-TableCell"
+                    >
+                      GBP
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div
+            class="rt-ScrollAreaViewportFocusRing"
+          />
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="rt-TableRoot rt-r-size-1 rt-variant-ghost"
+    >
+      <div
+        class="rt-ScrollAreaRoot"
+        dir="ltr"
+        style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;"
+      >
+        <style>
+          [data-radix-scroll-area-viewport]{scrollbar-width:none;-ms-overflow-style:none;-webkit-overflow-scrolling:touch;}[data-radix-scroll-area-viewport]::-webkit-scrollbar{display:none}
+        </style>
+        <div
+          class="rt-ScrollAreaViewport"
+          data-radix-scroll-area-viewport=""
+          style="overflow-x: scroll; overflow-y: scroll;"
+        >
+          <div
+            style="min-width: 100%; display: table;"
+          >
+            <table
+              class="rt-TableRootTable rt-r-tl-auto"
+            >
+              <thead
+                class="rt-TableHeader"
+              >
+                <tr
+                  class="rt-TableRow"
+                >
+                  <th
+                    align="left"
+                    class="rt-TableCell rt-TableColumnHeaderCell"
+                    scope="col"
+                  >
+                    ID
+                  </th>
+                  <th
+                    align="left"
+                    class="rt-TableCell rt-TableColumnHeaderCell"
+                    scope="col"
+                  >
+                    Investor Name
+                  </th>
+                  <th
+                    align="left"
+                    class="rt-TableCell rt-TableColumnHeaderCell"
+                    scope="col"
+                  >
+                    Investory Type
+                  </th>
+                  <th
+                    align="left"
+                    class="rt-TableCell rt-TableColumnHeaderCell"
+                    scope="col"
+                  >
+                    Investor Country
+                  </th>
+                  <th
+                    align="left"
+                    class="rt-TableCell rt-TableColumnHeaderCell"
+                    scope="col"
+                  >
+                    Investor Date Added
+                  </th>
+                  <th
+                    align="left"
+                    class="rt-TableCell rt-TableColumnHeaderCell"
+                    scope="col"
+                  >
+                    Investor Last Updated
+                  </th>
+                  <th
+                    align="left"
+                    class="rt-TableCell rt-TableColumnHeaderCell"
+                    scope="col"
+                  >
+                    Commitment Asset Class
+                  </th>
+                  <th
+                    align="left"
+                    class="rt-TableCell rt-TableColumnHeaderCell"
+                    scope="col"
+                  >
+                    Commitmment Amount
+                  </th>
+                  <th
+                    align="left"
+                    class="rt-TableCell rt-TableColumnHeaderCell"
+                    scope="col"
+                  >
+                    Commitmment Currency
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="rt-TableBody"
+              >
+                <tr
+                  class="rt-TableRow"
+                >
+                  <th
+                    class="rt-TableCell rt-TableRowHeaderCell"
+                    scope="row"
+                  >
+                    0
+                  </th>
+                  <td
+                    class="rt-TableCell"
+                    data-testid="Ioo Gryffindor fund"
+                  >
+                    Ioo Gryffindor fund
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    fund manager
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    Singapore
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    2000-07-06
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    2024-02-21
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                    data-testid="Infrastructure"
+                  >
+                    Infrastructure
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    15000000
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    GBP
+                  </td>
+                </tr>
+                <tr
+                  class="rt-TableRow"
+                >
+                  <th
+                    class="rt-TableCell rt-TableRowHeaderCell"
+                    scope="row"
+                  >
+                    1
+                  </th>
+                  <td
+                    class="rt-TableCell"
+                    data-testid="Ibx Skywalker ltd"
+                  >
+                    Ibx Skywalker ltd
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    asset manager
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    United States
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    1997-07-21
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    2024-02-21
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                    data-testid="Infrastructure"
+                  >
+                    Infrastructure
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    31000000
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    GBP
+                  </td>
+                </tr>
+                <tr
+                  class="rt-TableRow"
+                >
+                  <th
+                    class="rt-TableCell rt-TableRowHeaderCell"
+                    scope="row"
+                  >
+                    2
+                  </th>
+                  <td
+                    class="rt-TableCell"
+                    data-testid="Cza Weasley fund"
+                  >
+                    Cza Weasley fund
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    wealth manager
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    United Kingdom
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    2002-05-29
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    2024-02-21
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                    data-testid="Hedge Funds"
+                  >
+                    Hedge Funds
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    58000000
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    GBP
+                  </td>
+                </tr>
+                <tr
+                  class="rt-TableRow"
+                >
+                  <th
+                    class="rt-TableCell rt-TableRowHeaderCell"
+                    scope="row"
+                  >
+                    3
+                  </th>
+                  <td
+                    class="rt-TableCell"
+                    data-testid="Mjd Jedi fund"
+                  >
+                    Mjd Jedi fund
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    bank
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    China
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    2010-06-08
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    2024-02-21
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                    data-testid="Private Equity"
+                  >
+                    Private Equity
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    72000000
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    GBP
+                  </td>
+                </tr>
+                <tr
+                  class="rt-TableRow"
+                >
+                  <th
+                    class="rt-TableCell rt-TableRowHeaderCell"
+                    scope="row"
+                  >
+                    4
+                  </th>
+                  <td
+                    class="rt-TableCell"
+                    data-testid="Mjd Jedi fund"
+                  >
+                    Mjd Jedi fund
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    bank
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    China
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    2010-06-08
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    2024-02-21
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                    data-testid="Natural Resources"
+                  >
+                    Natural Resources
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    1000000
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    GBP
+                  </td>
+                </tr>
+                <tr
+                  class="rt-TableRow"
+                >
+                  <th
+                    class="rt-TableCell rt-TableRowHeaderCell"
+                    scope="row"
+                  >
+                    5
+                  </th>
+                  <td
+                    class="rt-TableCell"
+                    data-testid="Ibx Skywalker ltd"
+                  >
+                    Ibx Skywalker ltd
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    asset manager
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    United States
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    1997-07-21
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    2024-02-21
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                    data-testid="Real Estate"
+                  >
+                    Real Estate
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    17000000
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    GBP
+                  </td>
+                </tr>
+                <tr
+                  class="rt-TableRow"
+                >
+                  <th
+                    class="rt-TableCell rt-TableRowHeaderCell"
+                    scope="row"
+                  >
+                    6
+                  </th>
+                  <td
+                    class="rt-TableCell"
+                    data-testid="Ibx Skywalker ltd"
+                  >
+                    Ibx Skywalker ltd
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    asset manager
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    United States
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    1997-07-21
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    2024-02-21
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                    data-testid="Real Estate"
+                  >
+                    Real Estate
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    83000000
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    GBP
+                  </td>
+                </tr>
+                <tr
+                  class="rt-TableRow"
+                >
+                  <th
+                    class="rt-TableCell rt-TableRowHeaderCell"
+                    scope="row"
+                  >
+                    7
+                  </th>
+                  <td
+                    class="rt-TableCell"
+                    data-testid="Mjd Jedi fund"
+                  >
+                    Mjd Jedi fund
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    bank
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    China
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    2010-06-08
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    2024-02-21
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                    data-testid="Hedge Funds"
+                  >
+                    Hedge Funds
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    28000000
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    GBP
+                  </td>
+                </tr>
+                <tr
+                  class="rt-TableRow"
+                >
+                  <th
+                    class="rt-TableCell rt-TableRowHeaderCell"
+                    scope="row"
+                  >
+                    8
+                  </th>
+                  <td
+                    class="rt-TableCell"
+                    data-testid="Ibx Skywalker ltd"
+                  >
+                    Ibx Skywalker ltd
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    asset manager
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    United States
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    1997-07-21
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    2024-02-21
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                    data-testid="Hedge Funds"
+                  >
+                    Hedge Funds
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    85000000
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    GBP
+                  </td>
+                </tr>
+                <tr
+                  class="rt-TableRow"
+                >
+                  <th
+                    class="rt-TableCell rt-TableRowHeaderCell"
+                    scope="row"
+                  >
+                    9
+                  </th>
+                  <td
+                    class="rt-TableCell"
+                    data-testid="Ioo Gryffindor fund"
+                  >
+                    Ioo Gryffindor fund
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    fund manager
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    Singapore
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    2000-07-06
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    2024-02-21
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                    data-testid="Hedge Funds"
+                  >
+                    Hedge Funds
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    31000000
+                  </td>
+                  <td
+                    class="rt-TableCell"
+                  >
+                    GBP
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div
+          class="rt-ScrollAreaViewportFocusRing"
+        />
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

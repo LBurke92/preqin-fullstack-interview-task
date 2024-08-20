@@ -7,9 +7,9 @@ This is built using a Python + FastAPI Framework with SQLAlchemy as an ORM.
 
 You will need `python` installed on your machine, this application was built using Python `3.12.1` but any version `>= 3.10.0` should be fine.
 
-You will need to install `fastapi`, `SQLAlchemy` and `pandas` using pip. It is reccomended to use a virtual environment (venv) to set up these dependencies.
+You will need to install `fastapi`, `SQLAlchemy`,`pandas` `pytest` using pip. It is reccomended to use a virtual environment (venv) to set up these dependencies.
 
-e.g. `pip install fastapi SQLAlchemy pandas`
+e.g. `pip install fastapi SQLAlchemy pandas pytest`
 
 To first build the database you should execute the crud.py file as an application.
 
